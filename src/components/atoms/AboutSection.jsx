@@ -6,7 +6,7 @@ function AboutSection() {
         <p className="font-semibold text-2xl lg:text-3xl">ABOUT ME</p>
         <p className="text-lg lg:text-2xl font-medium">
           {" "}
-          <span className=" bg-[#8eebda]  px-1 rounded-lg text-white ">
+          <span className=" bg-[#8eebda]  px-1 rounded-lg text-white font-kaushan">
             Why Choose Me:
           </span>
         </p>
@@ -41,7 +41,7 @@ function AboutSection() {
             </li>
           </ul>
           
-          <p className="text-sm lg:text-sm text-slate-600 mt-4 text-justify">
+          <p className="text-sm lg:text-sm text-slate-600 mt-4 text-left md:text-justify">
             These skills are backed by my Harisenin.com Front-End Development Bootcamp certification (GPA 4.00/4.00)
           </p>
         </div>

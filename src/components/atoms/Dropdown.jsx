@@ -15,26 +15,32 @@ function Dropdown() {
     // Add event listener when dropdown is open
     if (dropdown) {
       document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
     }
 
     // Cleanup event listener
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
     };
   }, [dropdown]);
 
   return (
-    <div ref={dropdownRef} className="relative px-2 rounded md:hidden bg-[#8eebda]">
+    <div ref={dropdownRef} className="relative px-2 rounded md:hidden bg-[#8eebda] z-50">
       <button
         onClick={() => {
           setDropdown(!dropdown);
         }}
-        className="text-3xl text-white cursor-pointer md:hidden"
+        onTouchEnd={() => {
+          setDropdown(!dropdown);
+        }}
+        className="text-3xl text-white cursor-pointer md:hidden p-2 touch-manipulation"
+        style={{ touchAction: 'manipulation' }}
       >
         ☰
       </button>
       <div
-        className={`absolute z-100 group bg-[#8eebda] w-40 right-0  text-center text-white font-poppins font-medium rounded text-lg  gap-4 p-1 mt-6 flex flex-col transition-all duration-300 ease-in-out font- ${
+        className={`absolute z-[9999] group bg-[#8eebda] w-40 right-0 text-center text-white font-poppins font-medium rounded text-lg gap-4 p-1 mt-6 flex flex-col transition-all duration-300 ease-in-out ${
           dropdown
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-5 pointer-events-none"
