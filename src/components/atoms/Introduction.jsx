@@ -2,9 +2,10 @@ function Introduction() {
   return (
     <>
     <div data-aos="fade-right" data-aos-duration="900">
-      <p className="mt-10  font-light text-slate-600 text-sm md:text-sm lg:text-[18px] w-[300px] md:w-[450px]">
-        I graduated in Physics from Universitas Indonesia and I'm a
-          Web Development bootcamp graduate (GPA 4.00)
+      <p className="mt-6 md:mt-10  font-light text-slate-600 text-[11px] md:text-[10px] lg:text-[14px] w-[450px] md:w-[650px]">
+      I’m a Web Development Bootcamp graduate (Harisenin.com, 2025, GPA: 4.00/4.00) <br/>
+      and a Physics graduate (Universitas Indonesia, 2023)<br/>
+       as well as an Erlangga Scholarship recipient (PT Penerbit Erlangga, 2020–2023).
       </p>
       </div>
     </>

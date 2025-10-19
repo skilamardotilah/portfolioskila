@@ -5,7 +5,7 @@ function Projects() {
     <>
       <div
         id="project"
-        className="py-28 flex flex-col  gap-10 items-center justify-center mb-20"
+        className="py-10 flex flex-col gap-5 items-center justify-center mb-10 md:py-28 md:gap-10 md:mb-20"
       >
         <h3
           data-aos="fade-down"

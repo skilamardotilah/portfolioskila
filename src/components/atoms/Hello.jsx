@@ -1,3 +1,5 @@
+import AnimatedText from "./AnimatedText";
+
 function Hello() {
   return (
     <>
@@ -9,11 +11,10 @@ function Hello() {
             SKILA
           </span>
         </span>
-        <p data-aos="fade-left" data-aos-duration="900" className="font-poppins font-medium text-md md:text-xl mt-2 ">
-          I'm passionate about {" "}
-          <span className="bg-[#42bda6]  absolute animate-bounce ml-2 text-white p-1 rounded-xl  font-kaushan text-xl md:text-2xl">
-          Front-End Web Development
-          </span>
+        <p data-aos="fade-left" data-aos-duration="900" className="font-poppins font-medium text-sm md:text-xl mt-2">
+          I'm passionate about{" "}
+          <br className="md:hidden" />
+          <AnimatedText />
         </p>
       </div>
     </>

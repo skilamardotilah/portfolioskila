@@ -1,12 +1,12 @@
 function DownloadResume() {
   return (
     <>
-      <div className="flex justify-start items-center mt-8 w-full md:w-[450px]">
+      <div className="flex justify-start items-center px-4 mt-1 w-full md:w-[450px]">
         <a 
           href="https://bit.ly/resumeskila" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
+          className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold p-2 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
         >
           <svg 
             className="w-5 h-5" 

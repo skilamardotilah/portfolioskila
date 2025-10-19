@@ -1,10 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function Dropdown() {
   const [dropdown, setDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Function to handle click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdown(false);
+      }
+    };
+
+    // Add event listener when dropdown is open
+    if (dropdown) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    // Cleanup event listener
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [dropdown]);
 
   return (
-    <div className="relative px-2 rounded md:hidden bg-[#8eebda]">
+    <div ref={dropdownRef} className="relative px-2 rounded md:hidden bg-[#8eebda]">
       <button
         onClick={() => {
           setDropdown(!dropdown);
@@ -20,16 +40,32 @@ function Dropdown() {
             : "opacity-0 -translate-y-5 pointer-events-none"
         }`}
       >
-        <a className="hover:bg-[#8eebda]" href="#home">
+        <a 
+          className="hover:bg-[#8eebda]" 
+          href="#home"
+          onClick={() => setDropdown(false)}
+        >
           Home
         </a>
-        <a className="hover:bg-[#8eebda]" href="#about">
+        <a 
+          className="hover:bg-[#8eebda]" 
+          href="#about"
+          onClick={() => setDropdown(false)}
+        >
           About
         </a>
-        <a className="hover:bg-[#8eebda]" href="#project">
+        <a 
+          className="hover:bg-[#8eebda]" 
+          href="#project"
+          onClick={() => setDropdown(false)}
+        >
           Project
         </a>
-        <a className="hover:bg-[#8eebda]" href="#contact">
+        <a 
+          className="hover:bg-[#8eebda]" 
+          href="#contact"
+          onClick={() => setDropdown(false)}
+        >
           Contact
         </a>
       </div>

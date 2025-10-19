@@ -7,6 +7,8 @@ function Tech() {
     { id: 5, name: "HTML5", img: "/Tech/html.png" },
     { id: 6, name: "CSS3", img: "/Tech/css.png" },
     { id: 7, name: "VITE", img: "/Tech/vite.png"},
+    { id: 8, name: "Figma", img: "/Tech/figma.png" },
+    { id: 9, name: "GitHub", img: "/Tech/github.png" },
   ];
   return (
     <>

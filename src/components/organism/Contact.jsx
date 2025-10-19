@@ -3,7 +3,7 @@ import ContactGroup from "../molecules/ContactGroup";
 function Contact() {
   return (
     <>
-    <div id="contact" className="flex pt-30  flex-col gap-10 lg:gap-0 lg:flex-row-reverse justify-center lg:justify-between lg:px-16 lg:items-baseline items-center ">
+    <div id="contact" className="flex pt-10 flex-col gap-5 justify-center items-center md:pt-30 md:gap-10">
     <ContactGroup/>
     </div>
     </>
