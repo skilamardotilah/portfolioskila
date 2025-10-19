@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 function AnimatedText() {
   const texts = [
-    "Front-End Web Development",
-    "Educational Technology", 
-    "Digital Publishing"
+    "Web Development",
+    "Digital Innovation", 
+    "Information Technology"
   ];
   
   const [currentTextIndex, setCurrentTextIndex] = useState(0);

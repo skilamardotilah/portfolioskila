@@ -17,7 +17,7 @@ function TechFloating() {
       {techIcons.map((tech) => (
         <div
           key={tech.name}
-          className="absolute w-6 h-6 md:w-8 md:h-8 opacity-60 hover:opacity-100 transition-opacity duration-300"
+          className="absolute w-4 h-4 md:w-8 md:h-8 opacity-60 hover:opacity-100 transition-opacity duration-300"
           style={{
             left: tech.left,
             top: tech.top,
