@@ -26,49 +26,47 @@ function Dropdown() {
   }, [dropdown]);
 
   return (
-    <div ref={dropdownRef} className="relative px-2 rounded md:hidden bg-[#8eebda] z-50">
+    <div ref={dropdownRef} className="navbar-dropdown relative px-2 rounded md:hidden bg-[#8eebda]" style={{zIndex: 99999999}}>
       <button
-        onClick={() => {
-          setDropdown(!dropdown);
-        }}
-        onTouchEnd={() => {
-          setDropdown(!dropdown);
-        }}
-        className="text-3xl text-white cursor-pointer md:hidden p-2 touch-manipulation"
+        onClick={() => setDropdown(!dropdown)}
+        className="text-3xl text-white cursor-pointer md:hidden p-2 touch-manipulation select-none active:scale-95 transition-transform"
         style={{ touchAction: 'manipulation' }}
+        type="button"
+        aria-label="Toggle mobile menu"
       >
-        ☰
+        {dropdown ? '✕' : '☰'}
       </button>
       <div
-        className={`absolute z-[9999] group bg-[#8eebda] w-40 right-0 text-center text-white font-poppins font-medium rounded text-lg gap-4 p-1 mt-6 flex flex-col transition-all duration-300 ease-in-out ${
+        className={`fixed bg-[#8eebda] w-40 right-4 top-20 text-center text-white font-poppins font-medium rounded-lg text-lg gap-2 p-3 flex flex-col transition-all duration-300 ease-in-out shadow-lg ${
           dropdown
-            ? "opacity-100 translate-y-0 pointer-events-auto"
-            : "opacity-0 -translate-y-5 pointer-events-none"
+            ? "opacity-100 translate-y-0 pointer-events-auto visible"
+            : "opacity-0 -translate-y-5 pointer-events-none invisible"
         }`}
+        style={{zIndex: 999999999}}
       >
         <a 
-          className="hover:bg-[#8eebda]" 
+          className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#home"
           onClick={() => setDropdown(false)}
         >
           Home
         </a>
         <a 
-          className="hover:bg-[#8eebda]" 
+          className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#about"
           onClick={() => setDropdown(false)}
         >
           About
         </a>
         <a 
-          className="hover:bg-[#8eebda]" 
+          className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#project"
           onClick={() => setDropdown(false)}
         >
           Project
         </a>
         <a 
-          className="hover:bg-[#8eebda]" 
+          className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#contact"
           onClick={() => setDropdown(false)}
         >
