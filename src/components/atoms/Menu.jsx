@@ -22,6 +22,12 @@ function Menu() {
             Project
           </a>
           <a
+            className="hover:text-[#8eebda] hover:underline  transition-all duration-200 "
+            href="#skills"
+          >
+            My Skills
+          </a>
+          <a
             className="hover:text-[#8eebda]  hover:underline transition-all duration-200 "
             href="#contact"
           >

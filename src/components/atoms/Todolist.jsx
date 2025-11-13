@@ -9,6 +9,7 @@ function Todolist() {
           <div className="bg-[url('/project/to-dolist.png')] w-full h-48 bg-cover rounded-lg flex-grow"></div>
           <div className="flex flex-col w-full px-1 gap-1 justify-end">
             <h1 className="inline-block font-poppins group-hover:text-teal-800 px-2 py-0.5 border group-hover:border-teal-300 rounded-lg">To-Do List</h1>
+            <p className="text-xs text-gray-600 group-hover:text-gray-300 px-2 py-1">Feature-rich task manager with priority levels, calendar integration, advanced filters, and Pomodoro timer.</p>
             <div className="flex flex-row gap-1">
               <h4>Tech:</h4>
               <div className="flex flex-row gap-2 text-xs">

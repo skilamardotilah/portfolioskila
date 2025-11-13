@@ -2,6 +2,7 @@ import ChillMovie from "../atoms/ChillMovie";
 import Comics from "../atoms/Comics";
 import PortoReact from "../atoms/PortoReact";
 import Todolist from "../atoms/Todolist";
+import PhysicsSimulation from "../atoms/PhysicsSimulation";
 
 function ProjectsGroup() {
   return (
@@ -11,6 +12,7 @@ function ProjectsGroup() {
         <Todolist />
         <Comics />
         <PortoReact />
+        <PhysicsSimulation />
       </div>
     </>
   );

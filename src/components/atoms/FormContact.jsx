@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 function FormContact() {
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     message: "",
   });
   const [loading, setLoading] = useState(false);
@@ -46,6 +47,7 @@ function FormContact() {
         templateId,
         {
           from_name: formData.name,
+          from_email: formData.email,
           message: formData.message,
           to_email: "skilamardotilah@gmail.com",
         },
@@ -56,7 +58,7 @@ function FormContact() {
         type: "success",
         message: "Message sent successfully! I'll get back to you soon.",
       });
-      setFormData({ name: "", message: "" });
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Error sending email:", error);
       
@@ -102,6 +104,17 @@ function FormContact() {
             name="name"
             placeholder="Name"
             value={formData.name}
+            onChange={handleChange}
+            className="border border-[#8eebda] focus:outline-2 focus:outline-teal-400 px-4 py-2 rounded-2xl"
+            required
+            disabled={loading}
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
             onChange={handleChange}
             className="border border-[#8eebda] focus:outline-2 focus:outline-teal-400 px-4 py-2 rounded-2xl"
             required

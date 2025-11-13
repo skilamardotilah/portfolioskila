@@ -47,28 +47,30 @@ function Dropdown() {
         <a 
           className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#home"
-          onClick={() => setDropdown(false)}
         >
           Home
         </a>
         <a 
           className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#about"
-          onClick={() => setDropdown(false)}
         >
           About
         </a>
         <a 
           className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#project"
-          onClick={() => setDropdown(false)}
         >
           Project
         </a>
         <a 
           className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
+          href="#skills"
+        >
+          My Skills
+        </a>
+        <a 
+          className="hover:bg-teal-600 hover:text-white py-2 px-3 rounded transition-colors duration-200" 
           href="#contact"
-          onClick={() => setDropdown(false)}
         >
           Contact
         </a>

@@ -1,18 +1,18 @@
-function ChillMovie() {
-  const tech = ["REACTJS", "TAILWINDCSS", "REACT ROUTER"];
+function PhysicsSimulation() {
+  const tech = ["HTML", "CSS", "JAVASCRIPT"];
 
   return (
     <>
-      <div data-aos="fade-right" fade-aos-duration="1000" className=" h-full">
+      <div data-aos="fade-up" data-aos-duration="1000" className="h-full">
         <div className="border group relative shadow-2xl hover:shadow-none hover:ease-in-out hover:scale-105 transition duration-400 hover:bg-black hover:text-white hover:border-2 hover:border-teal-300 cursor-pointer px-2 pt-2 pb-2 gap-2 rounded-lg flex flex-col h-full font-poppins max-w-sm mx-auto">
-          <a target="_blank" href="https://mission-fe-adv2.vercel.app/" className="absolute inset-0 z-50"></a>
-          <div className="bg-[url('/project/webmovie.png')] w-full h-48 bg-cover rounded-lg flex-grow"></div>
+          <a href="https://simulasiskila.vercel.app/vernier.html" target="_blank" className="inset-0 absolute z-50"></a>
+          <div className="bg-[url('/project/Physics.png')] w-full h-48 bg-cover rounded-lg flex-grow"></div>
           <div className="flex flex-col w-full px-1 gap-1 justify-end">
-            <h1 className="inline-block font-poppins group-hover:text-teal-800 px-2 py-0.5 border group-hover:border-teal-300 rounded-lg">Movie Web</h1>
-            <p className="text-xs text-gray-600 group-hover:text-gray-300 px-2 py-1">Multi-page application with RESTful API integration, CRUD operations, state management, payment page, and comprehensive movie browsing features.</p>
+            <h1 className="inline-block font-poppins group-hover:text-teal-800 px-2 py-0.5 border group-hover:border-teal-300 rounded-lg">Physics Simulation</h1>
+            <p className="text-xs text-gray-600 group-hover:text-gray-300 px-2 py-1">Interactive vernier caliper simulation for precise measurements with step-by-step learning guide.</p>
             <div className="flex flex-row gap-1">
               <h4>Tech:</h4>
-              <div className="flex flex-row gap-2 text-xs">
+              <div className="flex flex-wrap gap-2 text-xs max-w-full">
                 {tech.map((item, index) => {
                   return (
                     <p className="p-1 rounded-lg group-hover:text-teal-800 px-1 py-0.5 border group-hover:border-teal-300" key={index}>
@@ -29,4 +29,5 @@ function ChillMovie() {
   );
 }
 
-export default ChillMovie;
+export default PhysicsSimulation;
+

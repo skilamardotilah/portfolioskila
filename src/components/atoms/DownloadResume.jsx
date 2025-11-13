@@ -3,7 +3,7 @@ function DownloadResume() {
     <>
       <div className="flex flex-row justify-between items-center px-4 mt-1 w-full md:w-[600px] lg:w-[700px] gap-2 md:gap-3">
         <a 
-          href="https://bit.ly/certifskila" 
+          href="https://drive.google.com/file/d/1dItzxQUl1GL723uhrzjsn0Q3yuPy87cm/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-[#8eebda] to-teal-400 hover:from-teal-400 hover:to-[#8eebda] text-white font-semibold p-2 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
